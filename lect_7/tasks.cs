@@ -16,7 +16,6 @@ namespace CSPpractice
 
             static void Task_2()
             {
-                object num = 10;
                 object[] array = new object[3];
                 array[0] = 32;
                 array[1] = 'A';
@@ -26,7 +25,13 @@ namespace CSPpractice
                     Console.WriteLine(array[i]);
                 }
 
+                array[0] = (int)array[0] + 10;
+                array[2] = (string)array[2] + ", guys";
 
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(array[i]);
+                }
             }
             Task_2();
 
