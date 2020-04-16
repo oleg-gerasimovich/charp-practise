@@ -6,6 +6,14 @@ namespace CSP
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("с какого номера хотете начать? ");
+
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            if (number != 0)
+            {
+                UniqueItem.counter = number;
+            }
             UniqueItem uniqueItem1 = new UniqueItem();
             UniqueItem uniqueItem2 = new UniqueItem();
             UniqueItem uniqueItem3 = new UniqueItem();
@@ -17,7 +25,7 @@ namespace CSP
         class UniqueItem
         {
 
-            private static int counter = default;
+            public static int counter = default;
 
             public UniqueItem()
             {
